@@ -18,6 +18,8 @@ A static HTML website for the National Museum of the Republic of Kazakhstan, bui
 | `history_of_museum.html` | History, architecture, and mission of the museum |
 | `exhibits.html` | Featured exhibits: Golden Man, Balbals, Saukele, Otrar ceramics |
 | `museum_rules.html` | Visitor rules, prohibited items, and feedback form |
+| `visiting_tickets.html` | Ticket prices, discounts, and online booking form |
+| `events_programs.html` | Upcoming exhibitions, workshops, lectures, and family programs |
 | `colophon.html` | Technical details about how this site was built |
 
 ## Project Structure
@@ -28,6 +30,8 @@ nmrk/
 ├── history_of_museum.html
 ├── exhibits.html
 ├── museum_rules.html
+├── visiting_tickets.html
+├── events_programs.html
 ├── colophon.html
 ├── tag-checklist.md
 ├── README.md
@@ -50,8 +54,8 @@ nmrk/
 | Student | Pages |
 |---|---|
 | Yevgeniy Tyo | index.html, exhibits.html, colophon.html |
-| Emil Sabirzhanov | museum_rules.html |
-| Emil Sabirzhanov | history_of_museum.html |
+| Emil Sabirzhanov | history_of_museum.html, museum_rules.html |
+| Assan Dairabayev | visiting_tickets.html, events_programs.html |
 
 ## Technologies
 
