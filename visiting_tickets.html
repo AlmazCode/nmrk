@@ -1,234 +1,400 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <!-- viewport ensures the page scales correctly on mobile devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ticket prices, discount days, and step-by-step booking instructions for the National Museum of the Republic of Kazakhstan.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ticket prices, discount days, and step-by-step booking instructions for the National Museum of the Republic of Kazakhstan."
+    />
     <!-- Author tag credits the student who wrote this page -->
-    <meta name="author" content="Assan Dairabayev">
+    <meta name="author" content="Assan Dairabayev" />
     <title>Visiting &amp; Tickets - National Museum of Kazakhstan</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <h1>National Museum of the Republic of Kazakhstan</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="history_of_museum.html">History of the Museum</a></li>
-                <li><a href="exhibits.html">Exhibits</a></li>
-                <li><a href="museum_rules.html">Rules &amp; Guidelines</a></li>
-                <li><a href="visiting_tickets.html" aria-current="page">Visiting &amp; Tickets</a></li>
-                <li><a href="events_programs.html">Events &amp; Programs</a></li>
-                <li><a href="colophon.html">Colophon</a></li>
-            </ul>
-        </nav>
+      <h1>National Museum of the Republic of Kazakhstan</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history_of_museum.html">History of the Museum</a></li>
+          <li><a href="exhibits.html">Exhibits</a></li>
+          <li><a href="museum_rules.html">Rules &amp; Guidelines</a></li>
+          <li>
+            <a href="visiting_tickets.html" aria-current="page"
+              >Visiting &amp; Tickets</a
+            >
+          </li>
+          <li><a href="events_programs.html">Events &amp; Programs</a></li>
+          <li><a href="architecture.html">Architecture</a></li>
+          <li><a href="colophon.html">Colophon</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
+      <section id="ticket-prices">
+        <h2>Ticket Prices</h2>
 
-        <section id="ticket-prices">
-            <h2>Ticket Prices</h2>
+        <p>
+          Entry to the museum is paid at the ticket office or in advance through
+          our partner platform. Prices below apply to a
+          <b>single-day, single-entry</b> visit and are shown in Kazakhstani
+          tenge (<abbr title="Kazakhstani Tenge">KZT</abbr>).
+        </p>
 
-            <p>Entry to the museum is paid at the ticket office or in advance through our partner platform. Prices below apply to a <b>single-day, single-entry</b> visit and are shown in Kazakhstani tenge (<abbr title="Kazakhstani Tenge">KZT</abbr>).</p>
+        <table>
+          <caption>
+            Standard admission prices
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Category</th>
+              <th scope="col">Price</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Adult</td>
+              <td>2,000&nbsp;&#8376;</td>
+              <td>Full exhibition access</td>
+            </tr>
+            <tr>
+              <td>Student &amp; senior</td>
+              <td>1,000&nbsp;&#8376;</td>
+              <td>Valid ID required</td>
+            </tr>
+            <tr>
+              <td>Child (7&ndash;17)</td>
+              <td>500&nbsp;&#8376;</td>
+              <td>Must be accompanied by an adult</td>
+            </tr>
+            <tr>
+              <td>Child (under 7)</td>
+              <td>Free</td>
+              <td>No ticket required</td>
+            </tr>
+            <tr>
+              <td>Family (2 adults + 2 children)</td>
+              <td>4,500&nbsp;&#8376;</td>
+              <td>Sold only at the ticket office</td>
+            </tr>
+          </tbody>
+        </table>
 
-            <table>
-                <caption>Standard admission prices</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Category</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Notes</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Adult</td>
-                        <td>2,000&nbsp;&#8376;</td>
-                        <td>Full exhibition access</td>
-                    </tr>
-                    <tr>
-                        <td>Student &amp; senior</td>
-                        <td>1,000&nbsp;&#8376;</td>
-                        <td>Valid ID required</td>
-                    </tr>
-                    <tr>
-                        <td>Child (7&ndash;17)</td>
-                        <td>500&nbsp;&#8376;</td>
-                        <td>Must be accompanied by an adult</td>
-                    </tr>
-                    <tr>
-                        <td>Child (under 7)</td>
-                        <td>Free</td>
-                        <td>No ticket required</td>
-                    </tr>
-                    <tr>
-                        <td>Family (2 adults + 2 children)</td>
-                        <td>4,500&nbsp;&#8376;</td>
-                        <td>Sold only at the ticket office</td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- This comment explains a design decision, not the tag itself: the note exists because ticket prices change yearly and we don't want the page to look outdated -->
+        <p>
+          <small
+            >Prices are reviewed annually. Please confirm current prices at the
+            ticket office or on the official museum website before your
+            visit.</small
+          >
+        </p>
+      </section>
 
-            <!-- This comment explains a design decision, not the tag itself: the note exists because ticket prices change yearly and we don't want the page to look outdated -->
-            <p><small>Prices are reviewed annually. Please confirm current prices at the ticket office or on the official museum website before your visit.</small></p>
-        </section>
+      <hr />
 
-        <hr>
+      <section id="discounts">
+        <!-- Used aside because this is a supplementary tip about saving money, not a core rule of the section -->
+        <aside>
+          <h3>Discount Days</h3>
+          <p>
+            Admission is <mark>free</mark> for all visitors on the
+            <em>first Sunday of every month</em>. War veterans, people with
+            disabilities, and children from orphanages enter free of charge on
+            any day &mdash; a valid supporting document must be shown at the
+            entrance.
+          </p>
+        </aside>
 
-        <section id="discounts">
-            <!-- Used aside because this is a supplementary tip about saving money, not a core rule of the section -->
-            <aside>
-                <h3>Discount Days</h3>
-                <p>Admission is <mark>free</mark> for all visitors on the <em>first Sunday of every month</em>. War veterans, people with disabilities, and children from orphanages enter free of charge on any day &mdash; a valid supporting document must be shown at the entrance.</p>
-            </aside>
+        <article id="group-visits">
+          <h3>Group &amp; School Visits</h3>
+          <p>
+            Groups of ten or more people<sup>1</sup> receive a
+            <strong>15% discount</strong> on the standard adult price when
+            booked at least three business days in advance. School classes
+            travelling with a teacher pay the child rate, and one accompanying
+            adult per ten students enters free.
+          </p>
+          <p>
+            <small
+              ><sup>1</sup> Minimum group size applies per single booking, not
+              per combined family bookings.</small
+            >
+          </p>
+          <p>
+            To arrange a group visit, call
+            <a href="tel:+77172919035">+7 7172 91 90 35</a> or write to
+            <a href="mailto:ulttyk_muzei&#64;nmrk.kz"
+              >ulttyk_muzei&#64;nmrk.kz</a
+            >
+            at least a week before your preferred date.
+          </p>
 
-            <article id="group-visits">
-                <h3>Group &amp; School Visits</h3>
-                <p>Groups of ten or more people<sup>1</sup> receive a <strong>15% discount</strong> on the standard adult price when booked at least three business days in advance. School classes travelling with a teacher pay the child rate, and one accompanying adult per ten students enters free.</p>
-                <p><small><sup>1</sup> Minimum group size applies per single booking, not per combined family bookings.</small></p>
-                <p>To arrange a group visit, call <a href="tel:+77172919035">+7 7172 91 90 35</a> or write to <a href="mailto:ulttyk_muzei&#64;nmrk.kz">ulttyk_muzei&#64;nmrk.kz</a> at least a week before your preferred date.</p>
+          <figure>
+            <img
+              src="src/warrior-statue-square.jpg"
+              alt="Bronze equestrian statue of a warrior holding a spear, standing on the square outside the museum"
+              width="600"
+              height="337"
+            />
+            <figcaption>
+              The warrior statue on the square is a popular meeting point for
+              groups before entry.
+            </figcaption>
+          </figure>
+        </article>
+      </section>
 
-                <figure>
-                    <img src="src/warrior-statue-square.jpg" alt="Bronze equestrian statue of a warrior holding a spear, standing on the square outside the museum" width="600" height="337">
-                    <figcaption>The warrior statue on the square is a popular meeting point for groups before entry.</figcaption>
-                </figure>
-            </article>
-        </section>
+      <hr />
 
-        <hr>
+      <section id="how-to-book">
+        <h2>How to Buy a Ticket Online</h2>
 
-        <section id="how-to-book">
-            <h2>How to Buy a Ticket Online</h2>
+        <p>
+          Tickets can be reserved in advance through our official partner,
+          <a href="https://e-history.kz" target="_blank" rel="noopener"
+            >E-History Kazakhstan</a
+          >, to avoid queues on busy weekends.
+        </p>
 
-            <p>Tickets can be reserved in advance through our official partner, <a href="https://e-history.kz" target="_blank" rel="noopener">E-History Kazakhstan</a>, to avoid queues on busy weekends.</p>
+        <!-- Nested list: outer ordered list shows the booking sequence, inner list breaks down the payment step -->
+        <ol start="1">
+          <li>
+            Open the ticketing partner website and select &laquo;National
+            Museum&raquo; from the venue list.
+          </li>
+          <li>
+            Choose your visit date and the number of tickets per category.
+          </li>
+          <li>
+            Pay for your order using one of the following methods:
+            <ul>
+              <li>Bank card (Visa / Mastercard)</li>
+              <li>Kaspi Pay</li>
+              <li>Mobile wallet</li>
+            </ul>
+          </li>
+          <li>
+            Show the confirmation e-mail or SMS code at the entrance turnstile.
+          </li>
+        </ol>
 
-            <!-- Nested list: outer ordered list shows the booking sequence, inner list breaks down the payment step -->
-            <ol start="1">
-                <li>Open the ticketing partner website and select &laquo;National Museum&raquo; from the venue list.</li>
-                <li>Choose your visit date and the number of tickets per category.</li>
-                <li>Pay for your order using one of the following methods:
-                    <ul>
-                        <li>Bank card (Visa / Mastercard)</li>
-                        <li>Kaspi Pay</li>
-                        <li>Mobile wallet</li>
-                    </ul>
-                </li>
-                <li>Show the confirmation e-mail or SMS code at the entrance turnstile.</li>
-            </ol>
+        <p>
+          Jump to <a href="#ticket-prices">ticket prices</a> or see the
+          <a href="#ticket-types">definitions of ticket types</a> below.
+        </p>
+      </section>
 
-            <p>Jump to <a href="#ticket-prices">ticket prices</a> or see the <a href="#ticket-types">definitions of ticket types</a> below.</p>
-        </section>
+      <hr />
 
-        <hr>
+      <section id="ticket-types">
+        <h2>Ticket Types Explained</h2>
 
-        <section id="ticket-types">
-            <h2>Ticket Types Explained</h2>
+        <dl>
+          <dt>Standard ticket</dt>
+          <dd>
+            Grants access to all permanent exhibition halls for one calendar
+            day.
+          </dd>
 
-            <dl>
-                <dt>Standard ticket</dt>
-                <dd>Grants access to all permanent exhibition halls for one calendar day.</dd>
+          <dt>Combined ticket</dt>
+          <dd>
+            Adds entry to the current temporary exhibition for an extra fee,
+            purchased at the same time as the standard ticket.
+          </dd>
 
-                <dt>Combined ticket</dt>
-                <dd>Adds entry to the current temporary exhibition for an extra fee, purchased at the same time as the standard ticket.</dd>
+          <dt>Group ticket</dt>
+          <dd>
+            A single booking covering ten or more visitors at the discounted
+            group rate, arranged in advance.
+          </dd>
+        </dl>
 
-                <dt>Group ticket</dt>
-                <dd>A single booking covering ten or more visitors at the discounted group rate, arranged in advance.</dd>
-            </dl>
+        <figure>
+          <img
+            src="src/enter-to-museum.jpg"
+            alt="Visitors queuing at the ticket turnstiles of the National Museum entrance"
+            width="600"
+            height="400"
+          />
+          <figcaption>
+            The entrance turnstiles where tickets and confirmation codes are
+            checked.
+          </figcaption>
+        </figure>
 
-            <figure>
-                <img src="src/enter-to-museum.jpg" alt="Visitors queuing at the ticket turnstiles of the National Museum entrance" width="600" height="400">
-                <figcaption>The entrance turnstiles where tickets and confirmation codes are checked.</figcaption>
-            </figure>
+        <figure>
+          <img
+            src="src/golden-warrior-armor.jpg"
+            alt="Ceremonial gold-coloured warrior armour with a pointed helmet on display in a glass case"
+            width="400"
+            height="500"
+          />
+          <figcaption>
+            A full suit of Saka warrior armour, one of the exhibits waiting for
+            you once you're through the turnstiles.
+          </figcaption>
+        </figure>
 
-            <figure>
-                <img src="src/golden-warrior-armor.jpg" alt="Ceremonial gold-coloured warrior armour with a pointed helmet on display in a glass case" width="400" height="500">
-                <figcaption>A full suit of Saka warrior armour, one of the exhibits waiting for you once you're through the turnstiles.</figcaption>
-            </figure>
+        <p>
+          As one first-time visitor told us:
+          <q>booking online saved us almost half an hour of waiting in line</q>.
+          Staff at the information desk confirm this is the case on most
+          weekends.
+        </p>
 
-            <p>As one first-time visitor told us: <q>booking online saved us almost half an hour of waiting in line</q>. Staff at the information desk confirm this is the case on most weekends.</p>
+        <blockquote>
+          <p>
+            &ldquo;We come every autumn with our students. Buying group tickets
+            in advance makes the whole excursion run so much smoother.&rdquo;
+          </p>
+          <cite
+            >Aigerim Bekova, school teacher, visitor feedback book, March
+            2026</cite
+          >
+        </blockquote>
+      </section>
 
-            <blockquote>
-                <p>&ldquo;We come every autumn with our students. Buying group tickets in advance makes the whole excursion run so much smoother.&rdquo;</p>
-                <cite>Aigerim Bekova, school teacher, visitor feedback book, March 2026</cite>
-            </blockquote>
-        </section>
+      <hr />
 
-        <hr>
+      <section id="booking-form">
+        <h2>Reserve Tickets in Advance</h2>
 
-        <section id="booking-form">
-            <h2>Reserve Tickets in Advance</h2>
+        <p>
+          Prefer to reserve directly with us? Fill in the short form below and
+          our visitor services team will confirm your booking by phone or email.
+        </p>
 
-            <p>Prefer to reserve directly with us? Fill in the short form below and our visitor services team will confirm your booking by phone or email.</p>
+        <!-- This form does not send anything yet — server-side handling comes later in the course -->
+        <form method="post" action="#">
+          <fieldset>
+            <legend>Visitor Details</legend>
 
-            <!-- This form does not send anything yet — server-side handling comes later in the course -->
-            <form method="post" action="#">
-                <fieldset>
-                    <legend>Visitor Details</legend>
+            <label for="ticket-name">Full name:</label><br />
+            <input
+              type="text"
+              id="ticket-name"
+              name="ticket-name"
+              placeholder="Assan Dairabayev"
+              required
+            /><br /><br />
 
-                    <label for="ticket-name">Full name:</label><br>
-                    <input type="text" id="ticket-name" name="ticket-name" placeholder="Assan Dairabayev" required><br><br>
+            <label for="ticket-email">Email:</label><br />
+            <input
+              type="email"
+              id="ticket-email"
+              name="ticket-email"
+              placeholder="you@example.com"
+              required
+            /><br /><br />
 
-                    <label for="ticket-email">Email:</label><br>
-                    <input type="email" id="ticket-email" name="ticket-email" placeholder="you@example.com" required><br><br>
+            <label for="ticket-phone">Phone:</label><br />
+            <input
+              type="tel"
+              id="ticket-phone"
+              name="ticket-phone"
+              placeholder="+7 700 000 00 00"
+            /><br /><br />
 
-                    <label for="ticket-phone">Phone:</label><br>
-                    <input type="tel" id="ticket-phone" name="ticket-phone" placeholder="+7 700 000 00 00"><br><br>
+            <label for="ticket-count">Number of tickets:</label><br />
+            <input
+              type="number"
+              id="ticket-count"
+              name="ticket-count"
+              min="1"
+              max="30"
+              placeholder="2"
+              required
+            /><br /><br />
 
-                    <label for="ticket-count">Number of tickets:</label><br>
-                    <input type="number" id="ticket-count" name="ticket-count" min="1" max="30" placeholder="2" required><br><br>
+            <label for="ticket-date">Visit date:</label><br />
+            <input
+              type="date"
+              id="ticket-date"
+              name="ticket-date"
+              required
+            /><br /><br />
+          </fieldset>
 
-                    <label for="ticket-date">Visit date:</label><br>
-                    <input type="date" id="ticket-date" name="ticket-date" required><br><br>
-                </fieldset>
+          <fieldset>
+            <legend>Ticket Category</legend>
 
-                <fieldset>
-                    <legend>Ticket Category</legend>
+            <input
+              type="radio"
+              id="cat-adult"
+              name="category"
+              value="adult"
+              required
+            />
+            <label for="cat-adult">Adult</label><br />
 
-                    <input type="radio" id="cat-adult" name="category" value="adult" required>
-                    <label for="cat-adult">Adult</label><br>
+            <input
+              type="radio"
+              id="cat-student"
+              name="category"
+              value="student"
+            />
+            <label for="cat-student">Student / Senior</label><br />
 
-                    <input type="radio" id="cat-student" name="category" value="student">
-                    <label for="cat-student">Student / Senior</label><br>
+            <input
+              type="radio"
+              id="cat-family"
+              name="category"
+              value="family"
+            />
+            <label for="cat-family">Family package</label><br /><br />
 
-                    <input type="radio" id="cat-family" name="category" value="family">
-                    <label for="cat-family">Family package</label><br><br>
+            <input type="checkbox" id="add-guide" name="extras" value="guide" />
+            <label for="add-guide">Add a guided tour</label><br />
 
-                    <input type="checkbox" id="add-guide" name="extras" value="guide">
-                    <label for="add-guide">Add a guided tour</label><br>
+            <input type="checkbox" id="add-audio" name="extras" value="audio" />
+            <label for="add-audio">Add an audio guide</label><br /><br />
 
-                    <input type="checkbox" id="add-audio" name="extras" value="audio">
-                    <label for="add-audio">Add an audio guide</label><br><br>
+            <label for="entry-time">Preferred entry time:</label><br />
+            <select id="entry-time" name="entry-time" required>
+              <option value="" disabled selected>&mdash; Select &mdash;</option>
+              <option value="10-12">10:00 &ndash; 12:00</option>
+              <option value="12-14">12:00 &ndash; 14:00</option>
+              <option value="14-16">14:00 &ndash; 16:00</option>
+              <option value="16-18">16:00 &ndash; 18:00</option></select
+            ><br /><br />
 
-                    <label for="entry-time">Preferred entry time:</label><br>
-                    <select id="entry-time" name="entry-time" required>
-                        <option value="" disabled selected>&mdash; Select &mdash;</option>
-                        <option value="10-12">10:00 &ndash; 12:00</option>
-                        <option value="12-14">12:00 &ndash; 14:00</option>
-                        <option value="14-16">14:00 &ndash; 16:00</option>
-                        <option value="16-18">16:00 &ndash; 18:00</option>
-                    </select><br><br>
+            <label for="ticket-notes">Additional notes:</label><br />
+            <textarea
+              id="ticket-notes"
+              name="ticket-notes"
+              rows="4"
+              cols="40"
+              placeholder="Wheelchair access, group size, etc."
+            ></textarea
+            ><br /><br />
 
-                    <label for="ticket-notes">Additional notes:</label><br>
-                    <textarea id="ticket-notes" name="ticket-notes" rows="4" cols="40" placeholder="Wheelchair access, group size, etc."></textarea><br><br>
-
-                    <button type="submit">Reserve</button>
-                    <button type="reset">Clear form</button>
-                </fieldset>
-            </form>
-        </section>
-
+            <button type="submit">Reserve</button>
+            <button type="reset">Clear form</button>
+          </fieldset>
+        </form>
+      </section>
     </main>
 
     <footer>
-        <p>Address: Astana, 54 Tayelshizdik Avenue</p>
-        <p>Phone: <a href="tel:+77172919035">+7 7172 91 90 35</a> | <a href="tel:+77172919036">+7 7172 91 90 36</a></p>
-        <p>Hotline: <a href="tel:+77172252391">+7 7172 25-23-91</a></p>
-        <p>Media enquiries: <a href="tel:+77005252391">+7 700 525 23 91</a></p>
-        <p>Email: <a href="mailto:ulttyk_muzei&#64;nmrk.kz">ulttyk_muzei&#64;nmrk.kz</a></p>
-        <p>&copy; 2026 National Museum of the Republic of Kazakhstan. All rights reserved.</p>
+      <p>Address: Astana, 54 Tayelshizdik Avenue</p>
+      <p>
+        Phone: <a href="tel:+77172919035">+7 7172 91 90 35</a> |
+        <a href="tel:+77172919036">+7 7172 91 90 36</a>
+      </p>
+      <p>Hotline: <a href="tel:+77172252391">+7 7172 25-23-91</a></p>
+      <p>Media enquiries: <a href="tel:+77005252391">+7 700 525 23 91</a></p>
+      <p>
+        Email:
+        <a href="mailto:ulttyk_muzei&#64;nmrk.kz">ulttyk_muzei&#64;nmrk.kz</a>
+      </p>
+      <p>
+        &copy; 2026 National Museum of the Republic of Kazakhstan. All rights
+        reserved.
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>

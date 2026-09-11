@@ -1,0 +1,126 @@
+# Introduction to Web Technologies — Assignment 1
+
+**Internet & WWW basics · Structure of a web page · Basic HTML document · Semantic tags, tables, forms, div & span**
+
+---
+
+## Step 0. Before you write any code
+
+Your final exam is a project that you build across the whole semester, starting with this assignment. So first choose your theme, then your team. 
+
+* **Team Size:** A maximum of three students. Working individually is equally welcome and is graded on the same scale; only the number of pages changes. 
+* **Consistency:** Team and theme are fixed for the semester: every week you extend the same repository, you never start over.
+
+### Theme
+Choose a **real, physically existing organization or place** in your city that you can visit or contact in person—a café, gym, student club, barbershop, clinic, shop, animal shelter, driving school, museum, workshop. 
+
+* Fictional or generic companies are rejected. 
+* No two projects in the group may take the same organization; first come, first served.
+
+### What to Build
+* **Files Required:** `index.html`, `colophon.html` (how the site was made), and two more pages per student:
+  * **4 pages** if you work alone
+  * **6 pages** for two students
+  * **8 pages** for three students
+* **Content:** Each page holds **150–250 words** of your own text, the author's name in an HTML comment, and in a meta author tag.
+* **Environment:** The site is a set of local files opened directly in your browser: you do not buy a domain and you do not host anything. Hosting and deployment come later in the semester.
+
+### Required on Every Page
+* `<!DOCTYPE html>`, `lang`, `charset`, `viewport`, a description and author meta tag, a unique title.
+* Exactly **one `<h1>`** and correct heading order without skipped levels.
+* **Semantic skeleton:**
+  * `<header>` with the site name
+  * `<nav>` containing a list of relative links to every page of the site
+  * `<main>` for the content
+  * `<footer>` with contacts and a copyright entity
+* Two comments explaining *why* you did something rather than *what* the tag is.
+
+### Required Across Your Own Two Pages
+* **Structure:** `<section>`, `<article>`, `<aside>`, `<figure>` with `<figcaption>`.
+* **Tables:** At least one table describing real data, with `<caption>`, `<thead>`, `<tbody>`, and `<th>` with `scope`.
+* **Lists:** A nested list, an ordered list with an attribute, a definition list.
+* **Links:** An external link with `target` and `rel`, a `mailto` link, a `tel` link, two links to an `id` on the same page.
+* **Images:** Three images with meaningful `alt` text.
+* **Text Formatting:** `<strong>`, `<em>`, `<b>`, `<i>`, `<mark>`, `<small>`, `<sub>` or `<sup>`, two `<abbr>` with `title`, a `blockquote` holding a real quote you collected yourself, an inline `<q>`, `<cite>`, `<code>`, `<pre>`, `<kbd>`, `<samp>`, `<hr>`, `<br>`, and **four different HTML entities**. 
+  * *Note:* The `code`, `pre`, `kbd`, and `samp` tags belong naturally in `colophon.html`.
+
+### div and span
+* Use each of them at least once, but **only where no semantic tag fits**, and put a comment next to it explaining why nothing else worked.
+* *Penalty:* A `div` used where `header`, `nav`, `main`, `section`, `article`, or `footer` belongs costs **5 points each time**.
+
+### Forms
+Each student writes at least one form on one of their own pages, relevant to the project—booking, feedback, registration, order. 
+
+* **Must contain:** `method` and `action` attributes, `<fieldset>` with `<legend>`, `<labels>` connected to their fields by `id`.
+* **Input types:** `text`, `email`, `tel`, `number`, and `date`.
+* **Elements:** A radio group, a checkbox, a `<select>` with options, a `<textarea>`, the `required` and `placeholder` attributes, a submit button, and a reset button.
+* **Note:** The form does not send anything yet—there is no server behind it—and you must say so in a comment inside the form. Server-side handling comes later in the course.
+
+### Forbidden
+* **No CSS in any form, no JavaScript, no frameworks, templates, or site builders.** Your pages must be unstyled—styling starts next week and it is much easier on clean markup.
+* **No Lorem ipsum**, no placeholder text, no stock or AI-generated images.
+
+### Tag Checklist
+Submit a checklist file naming every required tag together with the file, the line number where you used it, and which student wrote it. Missing or wrong line numbers mean the item is not counted.
+
+---
+
+## Task A — Anatomy of a Real Page
+1. Pick a real website similar to your project and study its source.
+2. Record its `doctype`, `lang`, `charset`, `viewport`, `title`, and three meta tags.
+3. Note which semantic tags it uses, where it uses `div` instead, and how its forms and tables are built.
+4. Draw its page structure **by hand on paper** — signed, dated, and photographed.
+5. Name three structural mistakes you found in it and explain how you avoided each one in your own pages.
+
+---
+
+## Task B — Written Part
+* Write **150–200 words** of your own text explaining what a web page is made of and how a browser turns your HTML file into what you see on screen.
+* Name three specific places in your own files where you chose a semantic tag over a `div` and say why.
+* Explain what happens when a visitor presses your submit button today. 
+* *Note:* A general textbook answer with no reference to your own files scores zero.
+
+---
+
+## Submission
+* A **Git repository** containing your pages, an `images` folder, a PDF report of both tasks with all screenshots, the tag checklist, the hand-drawn sketch, an AI log, and a `README`.
+* **Commit requirements:** Everyone commits from their own account: at least four commits across three different days (six commits if you work alone).
+* Every page must pass the **W3C validator with zero errors**.
+* All content must be real — real prices, opening hours, address, and phone, at least one real quote with a name and date, and at least three photographs taken by you.
+
+---
+
+## Defense in Class
+* You will be asked to:
+  * Explain random lines of your code.
+  * Explain a page you did not write.
+  * Justify why you chose one tag instead of another.
+  * Make a small live edit (such as adding a row to your table or a field to your form).
+* **Grading Rule:** Your grade is the project score multiplied by how well you explain your own work; if you cannot explain it, the score is zero. Work that is submitted but not defended is not evaluated, even if it was uploaded before the deadline. The deadline gives you the right to be graded; the defense gives you the grade.
+
+---
+
+## Grading (100 points)
+
+| Criteria | Points |
+| :--- | :--- |
+| **Theme and evidence of contact** | 8 |
+| **Task A** | 15 |
+| **Task B** | 10 |
+| **Semantic structure and tables** | 20 |
+| **Forms** | 20 |
+| **Tag checklist** | 15 |
+| **Authenticity of content** | 7 |
+| **Process and commit history** | 5 |
+
+* **Penalties:** 
+  * `-10` for any CSS or JavaScript
+  * `-5` per `div` used in place of a semantic tag
+  * `-5` per validator error
+  * `-5` per broken link
+  * `-15` for generic or placeholder content
+
+---
+
+## AI Policy
+You may ask AI to explain concepts. You may not use it to write your pages, your text, your report, or your images, and **every question you ask must be recorded in the AI log**. The parts of this assignment that carry the most points—your own photographs, real data from a real place, your hand-drawn sketch, your commit history, and the live defense—cannot be produced by AI.
