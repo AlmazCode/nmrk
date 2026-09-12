@@ -2,7 +2,16 @@
 
 Generated automatically by `generate_checklist.py`
 
-## architecture.html
+## Authors
+| Author | Files |
+|---|---|
+| **Assan Dairabayev** | events_programs.html, visiting_tickets.html |
+| **Emil Sabirzhanov** | history_of_museum.html, museum_rules.html |
+| **Yevgeniy Tyo** | architecture.html, colophon.html, exhibits.html, index.html |
+
+---
+
+## architecture.html `@Yevgeniy Tyo`
 
 ### Structural
 | Tag | Line |
@@ -121,7 +130,7 @@ Generated automatically by `generate_checklist.py`
 
 ---
 
-## colophon.html
+## colophon.html `@Yevgeniy Tyo`
 
 ### Structural
 | Tag | Line |
@@ -247,7 +256,7 @@ Generated automatically by `generate_checklist.py`
 
 ---
 
-## events_programs.html
+## events_programs.html `@Assan Dairabayev`
 
 ### Structural
 | Tag | Line |
@@ -491,7 +500,7 @@ Generated automatically by `generate_checklist.py`
 
 ---
 
-## exhibits.html
+## exhibits.html `@Yevgeniy Tyo`
 
 ### Structural
 | Tag | Line |
@@ -630,7 +639,7 @@ Generated automatically by `generate_checklist.py`
 
 ---
 
-## history_of_museum.html
+## history_of_museum.html `@Emil Sabirzhanov`
 
 ### Structural
 | Tag | Line |
@@ -888,7 +897,7 @@ Generated automatically by `generate_checklist.py`
 
 ---
 
-## index.html
+## index.html `@Yevgeniy Tyo`
 
 ### Structural
 | Tag | Line |
@@ -1002,7 +1011,7 @@ Generated automatically by `generate_checklist.py`
 
 ---
 
-## museum_rules.html
+## museum_rules.html `@Emil Sabirzhanov`
 
 ### Structural
 | Tag | Line |
@@ -1343,7 +1352,7 @@ Generated automatically by `generate_checklist.py`
 
 ---
 
-## visiting_tickets.html
+## visiting_tickets.html `@Assan Dairabayev`
 
 ### Structural
 | Tag | Line |
