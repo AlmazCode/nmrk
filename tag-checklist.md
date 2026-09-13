@@ -20,19 +20,48 @@ Generated automatically by `generate_checklist.py`
 | `<nav>` | 18 |
 | `<main>` | 34 |
 | `<section>` | 35 |
-| `<article>` | 52 |
-| `<aside>` | 70 |
-| `<section>` | 80 |
-| `<footer>` | 100 |
+| `<article>` | 57 |
+| `<aside>` | 96 |
+| `<section>` | 108 |
+| `<section>` | 122 |
+| `<section>` | 153 |
+| `<section>` | 174 |
+| `<footer>` | 212 |
 
 ### Headings
 | Tag | Line |
 |---|---:|
 | `<h1>` | 17 |
 | `<h2>` | 36 |
-| `<h3>` | 53 |
-| `<h3>` | 71 |
-| `<h2>` | 81 |
+| `<h3>` | 58 |
+| `<h3>` | 97 |
+| `<h2>` | 109 |
+| `<h2>` | 123 |
+| `<h2>` | 154 |
+| `<h2>` | 175 |
+
+### Tables
+| Tag | Line | Notes |
+|---|---:|---|
+| `<table>` | 124 |  |
+| `<caption>` | 125 |  |
+| `<thead>` | 126 |  |
+| `<tr>` | 127 |  |
+| `<th>` | 128 | scope="col" |
+| `<th>` | 129 | scope="col" |
+| `<tbody>` | 132 |  |
+| `<tr>` | 133 |  |
+| `<th>` | 134 | scope="row" |
+| `<td>` | 135 |  |
+| `<tr>` | 137 |  |
+| `<th>` | 138 | scope="row" |
+| `<td>` | 139 |  |
+| `<tr>` | 141 |  |
+| `<th>` | 142 | scope="row" |
+| `<td>` | 143 |  |
+| `<tr>` | 145 |  |
+| `<th>` | 146 | scope="row" |
+| `<td>` | 147 |  |
 
 ### Lists
 | Tag | Line | Notes |
@@ -46,31 +75,89 @@ Generated automatically by `generate_checklist.py`
 | `<li>` | 25 |  |
 | `<li>` | 26 |  |
 | `<li>` | 29 |  |
+| `<ul>` | 76 |  |
+| `<li>` | 77 |  |
+| `<ul>` | 78 |  |
+| `<li>` | 79 |  |
+| `<li>` | 80 |  |
+| `<li>` | 83 |  |
+| `<li>` | 84 |  |
+| `<ol>` | 88 | type="I" |
+| `<li>` | 89 |  |
+| `<li>` | 90 |  |
+| `<li>` | 91 |  |
+| `<li>` | 92 |  |
+| `<dl>` | 110 |  |
+| `<dt>` | 111 |  |
+| `<dd>` | 112 |  |
+| `<dt>` | 114 |  |
+| `<dd>` | 115 |  |
+| `<dt>` | 117 |  |
+| `<dd>` | 118 |  |
+
+### Forms
+| Tag | Line | Notes |
+|---|---:|---|
+| `<form>` | 177 | method="post", action="#" |
+| `<fieldset>` | 178 |  |
+| `<legend>` | 179 |  |
+| `<label>` | 181 | for="visitor-name" |
+| `<input>` | 182 | type="text", name="visitor-name", id="visitor-name", required |
+| `<label>` | 185 | for="visitor-email" |
+| `<input>` | 186 | type="email", name="visitor-email", id="visitor-email", required |
+| `<label>` | 189 | for="visit-date" |
+| `<input>` | 190 | type="date", name="visit-date", id="visit-date" |
+| `<label>` | 193 | for="group-size" |
+| `<select>` | 194 | name="group-size", id="group-size" |
+| `<option>` | 195 | value="1-5" |
+| `<option>` | 196 | value="6-15" |
+| `<option>` | 197 | value="16+" |
+| `<label>` | 201 | for="message" |
+| `<textarea>` | 202 | name="message", id="message" |
+| `<button>` | 205 | type="submit" |
 
 ### Text Formatting
 | Tag | Line | Notes |
 |---|---:|---|
+| `<em>` | 40 |  |
 | `<mark>` | 42 |  |
-| `<small>` | 58 |  |
-| `<b>` | 64 |  |
+| `<i>` | 62 |  |
+| `<small>` | 64 |  |
+| `<b>` | 70 |  |
+| `<strong>` | 71 |  |
+| `<sup>` | 135 |  |
 
 ### Block Text
 | Tag | Line |
 |---|---:|
 | `<p>` | 37 |
 | `<p>` | 45 |
+| `<blockquote>` | 51 |
+| `<p>` | 52 |
+| `<q>` | 52 |
 | `<p>` | 54 |
-| `<p>` | 63 |
-| `<p>` | 72 |
-| `<p>` | 82 |
-| `<p>` | 92 |
-| `<code>` | 93 |
-| `<p>` | 101 |
-| `<p>` | 102 |
-| `<p>` | 106 |
-| `<p>` | 107 |
-| `<p>` | 108 |
-| `<p>` | 112 |
+| `<cite>` | 54 |
+| `<p>` | 59 |
+| `<p>` | 69 |
+| `<p>` | 75 |
+| `<p>` | 87 |
+| `<p>` | 98 |
+| `<p>` | 155 |
+| `<p>` | 165 |
+| `<code>` | 166 |
+| `<p>` | 176 |
+| `<p>` | 180 |
+| `<p>` | 184 |
+| `<p>` | 188 |
+| `<p>` | 192 |
+| `<p>` | 200 |
+| `<p>` | 204 |
+| `<p>` | 213 |
+| `<p>` | 214 |
+| `<p>` | 218 |
+| `<p>` | 219 |
+| `<p>` | 220 |
+| `<p>` | 224 |
 
 ### Links
 | Type | Line | Href |
@@ -83,17 +170,29 @@ Generated automatically by `generate_checklist.py`
 | `internal` | 25 | events_programs.html |
 | `internal` | 27 | architecture.html |
 | `internal` | 29 | colophon.html |
-| `tel` | 103 | tel:+77172919035 |
-| `tel` | 104 | tel:+77172919036 |
-| `tel` | 106 | tel:+77172252391 |
-| `tel` | 107 | tel:+77005252391 |
-| `mailto` | 110 | mailto:ulttyk_muzei@nmrk.kz |
+| `tel` | 215 | tel:+77172919035 |
+| `tel` | 216 | tel:+77172919036 |
+| `tel` | 218 | tel:+77172252391 |
+| `tel` | 219 | tel:+77005252391 |
+| `mailto` | 222 | mailto:ulttyk_muzei@nmrk.kz |
+
+### Breaks
+| Tag | Line |
+|---|---:|
+| `<br>` | 100 |
+| `<hr>` | 106 |
+| `<hr>` | 172 |
+| `<br>` | 181 |
+| `<br>` | 185 |
+| `<br>` | 189 |
+| `<br>` | 193 |
+| `<br>` | 201 |
 
 ### Containers (div/span)
 | Tag | Line | Notes |
 |---|---:|---|
-| `<div>` | 90 |  |
-| `<span>` | 94 |  |
+| `<div>` | 163 |  |
+| `<span>` | 167 |  |
 
 ### Meta & Root
 | Tag | Line | Notes |
@@ -113,20 +212,26 @@ Generated automatically by `generate_checklist.py`
 | `&amp;` | 23 |
 | `&amp;` | 24 |
 | `&amp;` | 25 |
-| `&rsquo;` | 66 |
-| `&amp;` | 81 |
-| `&ndash;` | 93 |
-| `&#64;` | 110 |
-| `&copy;` | 113 |
+| `&mdash;` | 54 |
+| `&rsquo;` | 72 |
+| `&#8451;` | 101 |
+| `&rsquo;` | 115 |
+| `&#8451;` | 143 |
+| `&amp;` | 154 |
+| `&ndash;` | 166 |
+| `&ndash;` | 195 |
+| `&ndash;` | 196 |
+| `&#64;` | 222 |
+| `&copy;` | 225 |
 
 ### Comments
 | Line | Text |
 |---:|---|
 | 5 | viewport ensures correct scaling across all mobile devices |
 | 11 | Author tag credits the student who wrote this page |
-| 51 | Used article because this block focuses specifically on structural engineering d... |
-| 89 | div used because no semantic container fits a raw inline technical identifier st... |
-| 91 | Reason: div is used here purely as a generic wrapper because no other semantic b... |
+| 56 | Used article because this block focuses specifically on structural engineering d... |
+| 162 | div used because no semantic container fits here |
+| 164 | div is used here purely as a generic wrapper |
 
 ---
 
@@ -251,7 +356,7 @@ Generated automatically by `generate_checklist.py`
 ### Comments
 | Line | Text |
 |---:|---|
-| 48 | Used pre+code here instead of div+span because these tags preserve whitespace an... |
+| 48 | Used pre and code over a div to preserve raw spacing without relying on styles |
 | 72 | Used div here because there is no semantic tag for a generic container grouping ... |
 
 ---
@@ -509,25 +614,69 @@ Generated automatically by `generate_checklist.py`
 | `<nav>` | 16 |
 | `<main>` | 30 |
 | `<section>` | 31 |
-| `<section>` | 40 |
-| `<article>` | 43 |
-| `<article>` | 69 |
-| `<article>` | 92 |
-| `<article>` | 115 |
-| `<article>` | 137 |
-| `<footer>` | 170 |
+| `<section>` | 43 |
+| `<section>` | 62 |
+| `<section>` | 75 |
+| `<article>` | 79 |
+| `<article>` | 123 |
+| `<article>` | 146 |
+| `<article>` | 169 |
+| `<article>` | 191 |
+| `<section>` | 216 |
+| `<footer>` | 273 |
 
 ### Headings
 | Tag | Line |
 |---|---:|
 | `<h1>` | 15 |
 | `<h2>` | 32 |
-| `<h3>` | 41 |
-| `<h4>` | 44 |
-| `<h4>` | 70 |
-| `<h4>` | 93 |
-| `<h4>` | 116 |
-| `<h4>` | 138 |
+| `<h3>` | 44 |
+| `<h3>` | 63 |
+| `<h3>` | 76 |
+| `<h4>` | 80 |
+| `<h4>` | 124 |
+| `<h4>` | 147 |
+| `<h4>` | 170 |
+| `<h4>` | 192 |
+| `<h3>` | 217 |
+
+### Tables
+| Tag | Line | Notes |
+|---|---:|---|
+| `<table>` | 218 |  |
+| `<caption>` | 219 |  |
+| `<thead>` | 220 |  |
+| `<tr>` | 221 |  |
+| `<th>` | 222 | scope="col" |
+| `<th>` | 223 | scope="col" |
+| `<th>` | 224 | scope="col" |
+| `<th>` | 225 | scope="col" |
+| `<tbody>` | 228 |  |
+| `<tr>` | 229 |  |
+| `<th>` | 230 | scope="row" |
+| `<td>` | 231 |  |
+| `<td>` | 232 |  |
+| `<td>` | 233 |  |
+| `<tr>` | 235 |  |
+| `<th>` | 236 | scope="row" |
+| `<td>` | 237 |  |
+| `<td>` | 238 |  |
+| `<td>` | 239 |  |
+| `<tr>` | 241 |  |
+| `<th>` | 242 | scope="row" |
+| `<td>` | 243 |  |
+| `<td>` | 244 |  |
+| `<td>` | 245 |  |
+| `<tr>` | 247 |  |
+| `<th>` | 248 | scope="row" |
+| `<td>` | 249 |  |
+| `<td>` | 250 |  |
+| `<td>` | 251 |  |
+| `<tr>` | 253 |  |
+| `<th>` | 254 | scope="row" |
+| `<td>` | 255 |  |
+| `<td>` | 256 |  |
+| `<td>` | 257 |  |
 
 ### Lists
 | Tag | Line | Notes |
@@ -541,54 +690,89 @@ Generated automatically by `generate_checklist.py`
 | `<li>` | 23 |  |
 | `<li>` | 24 |  |
 | `<li>` | 25 |  |
+| `<dl>` | 49 |  |
+| `<dt>` | 50 |  |
+| `<dd>` | 51 |  |
+| `<dt>` | 53 |  |
+| `<dd>` | 54 |  |
+| `<dt>` | 56 |  |
+| `<dd>` | 57 |  |
+| `<ol>` | 65 | start="10" |
+| `<li>` | 66 |  |
+| `<li>` | 67 |  |
+| `<li>` | 68 |  |
+| `<li>` | 69 |  |
+| `<li>` | 70 |  |
+| `<ul>` | 105 |  |
+| `<li>` | 106 |  |
+| `<ul>` | 107 |  |
+| `<li>` | 108 |  |
+| `<li>` | 109 |  |
+| `<li>` | 112 |  |
+| `<li>` | 113 |  |
 
 ### Media
 | Tag | Line | Notes |
 |---|---:|---|
-| `<figure>` | 53 |  |
-| `<img>` | 54 | ./src/golden_man.jpg |
-| `<figcaption>` | 58 |  |
-| `<figure>` | 77 |  |
-| `<img>` | 78 | ./src/balbals.jpg |
-| `<figcaption>` | 82 |  |
-| `<figure>` | 100 |  |
-| `<img>` | 101 | ./src/saukele.jpg |
-| `<figcaption>` | 105 |  |
-| `<figure>` | 122 |  |
-| `<img>` | 123 | ./src/cauldron.jpg |
-| `<figcaption>` | 127 |  |
-| `<figure>` | 144 |  |
-| `<img>` | 145 | ./src/otrar_pottery.jpg |
-| `<figcaption>` | 149 |  |
+| `<figure>` | 89 |  |
+| `<img>` | 90 | ./src/golden_man.jpg |
+| `<figcaption>` | 94 |  |
+| `<figure>` | 131 |  |
+| `<img>` | 132 | ./src/balbals.jpg |
+| `<figcaption>` | 136 |  |
+| `<figure>` | 154 |  |
+| `<img>` | 155 | ./src/saukele.jpg |
+| `<figcaption>` | 159 |  |
+| `<figure>` | 176 |  |
+| `<img>` | 177 | ./src/cauldron.jpg |
+| `<figcaption>` | 181 |  |
+| `<figure>` | 198 |  |
+| `<img>` | 199 | ./src/otrar_pottery.jpg |
+| `<figcaption>` | 203 |  |
 
 ### Text Formatting
 | Tag | Line | Notes |
 |---|---:|---|
+| `<strong>` | 34 |  |
 | `<mark>` | 35 |  |
-| `<abbr>` | 93 | title="Saukele - Traditional bridal headgear" |
-| `<mark>` | 110 |  |
+| `<em>` | 37 |  |
+| `<i>` | 54 |  |
+| `<i>` | 80 |  |
+| `<sup>` | 86 |  |
+| `<sup>` | 120 |  |
+| `<abbr>` | 147 | title="Saukele - Traditional bridal headgear" |
+| `<mark>` | 164 |  |
 
 ### Block Text
 | Tag | Line |
 |---|---:|
 | `<p>` | 33 |
 | `<p>` | 45 |
-| `<p>` | 62 |
-| `<p>` | 71 |
-| `<p>` | 86 |
-| `<p>` | 94 |
-| `<p>` | 109 |
+| `<p>` | 64 |
+| `<p>` | 81 |
+| `<p>` | 98 |
+| `<p>` | 104 |
+| `<blockquote>` | 116 |
 | `<p>` | 117 |
-| `<p>` | 131 |
-| `<p>` | 139 |
-| `<p>` | 153 |
-| `<p>` | 160 |
+| `<q>` | 117 |
+| `<p>` | 119 |
+| `<cite>` | 119 |
+| `<p>` | 120 |
+| `<p>` | 125 |
+| `<p>` | 140 |
+| `<p>` | 148 |
+| `<p>` | 163 |
 | `<p>` | 171 |
-| `<p>` | 172 |
-| `<p>` | 173 |
-| `<p>` | 174 |
-| `<p>` | 175 |
-| `<p>` | 176 |
+| `<p>` | 185 |
+| `<p>` | 193 |
+| `<p>` | 207 |
+| `<p>` | 263 |
+| `<p>` | 274 |
+| `<p>` | 275 |
+| `<p>` | 276 |
+| `<p>` | 277 |
+| `<p>` | 278 |
+| `<p>` | 279 |
 
 ### Links
 | Type | Line | Href |
@@ -601,13 +785,25 @@ Generated automatically by `generate_checklist.py`
 | `internal` | 23 | events_programs.html |
 | `internal` | 24 | architecture.html |
 | `internal` | 25 | colophon.html |
-| `same-page` | 161 | #golden-man |
-| `external` | 163 | https://e-history.kz |
-| `tel` | 172 | tel:+77172919035 |
-| `tel` | 172 | tel:+77172919036 |
-| `tel` | 173 | tel:+77172252391 |
-| `tel` | 174 | tel:+77005252391 |
-| `mailto` | 175 | mailto:ulttyk_muzei@nmrk.kz |
+| `same-page` | 66 | #golden-man |
+| `same-page` | 67 | #balbals |
+| `same-page` | 68 | #saukele |
+| `same-page` | 69 | #bronze-cauldron |
+| `same-page` | 70 | #otrar-ceramics |
+| `same-page` | 264 | #golden-man |
+| `external` | 266 | https://e-history.kz |
+| `tel` | 275 | tel:+77172919035 |
+| `tel` | 275 | tel:+77172919036 |
+| `tel` | 276 | tel:+77172252391 |
+| `tel` | 277 | tel:+77005252391 |
+| `mailto` | 278 | mailto:ulttyk_muzei@nmrk.kz |
+
+### Breaks
+| Tag | Line |
+|---|---:|
+| `<hr>` | 40 |
+| `<br>` | 46 |
+| `<hr>` | 214 |
 
 ### Meta & Root
 | Tag | Line | Notes |
@@ -627,15 +823,23 @@ Generated automatically by `generate_checklist.py`
 | `&amp;` | 21 |
 | `&amp;` | 22 |
 | `&amp;` | 23 |
-| `&ndash;` | 48 |
-| `&#64;` | 175 |
-| `&copy;` | 176 |
+| `&ndash;` | 84 |
+| `&mdash;` | 119 |
+| `&ndash;` | 231 |
+| `&ndash;` | 237 |
+| `&ndash;` | 255 |
+| `&#64;` | 278 |
+| `&copy;` | 279 |
 
 ### Comments
 | Line | Text |
 |---:|---|
 | 5 | viewport ensures the page scales correctly on mobile devices |
 | 8 | Author tag credits the student who wrote this page |
+| 42 | New: glossary using a definition list, per grading feedback on missing dl |
+| 61 | New: quick index using an ordered list with a non-default attribute |
+| 74 | Used nested sections here to group the gallery hierarchically under the main |
+| 78 | Used article elements for each individual exhibit because each artifact represen... |
 
 ---
 
@@ -1007,7 +1211,7 @@ Generated automatically by `generate_checklist.py`
 | 5 | viewport ensures the page scales correctly on mobile devices |
 | 8 | Author tag credits the student who wrote this page |
 | 64 | Used article because this is a self-contained block about visiting hours |
-| 70 | Used aside because this is a supplementary tip, not part of the main content |
+| 70 | Used aside because this is a additional tip, not part of the main content |
 
 ---
 
