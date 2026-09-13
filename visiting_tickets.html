@@ -1,15 +1,13 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <!-- viewport ensures the page scales correctly on mobile devices -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
       content="Ticket prices, discount days, and step-by-step booking instructions for the National Museum of the Republic of Kazakhstan."
-    />
-    <!-- Author tag credits the student who wrote this page -->
-    <meta name="author" content="Assan Dairabayev" />
+    >
+    <meta name="author" content="Assan Dairabayev">
     <title>Visiting &amp; Tickets - National Museum of Kazakhstan</title>
   </head>
   <body>
@@ -84,7 +82,7 @@
           </tbody>
         </table>
 
-        <!-- This comment explains a design decision, not the tag itself: the note exists because ticket prices change yearly and we don't want the page to look outdated -->
+        <!-- prices change every year, so we keep this note -->
         <p>
           <small
             >Prices are reviewed annually. Please confirm current prices at the
@@ -94,10 +92,11 @@
         </p>
       </section>
 
-      <hr />
+      <hr>
 
       <section id="discounts">
-        <!-- Used aside because this is a supplementary tip about saving money, not a core rule of the section -->
+        <h2>Discounts</h2>
+        <!-- extra tip about saving money -->
         <aside>
           <h3>Discount Days</h3>
           <p>
@@ -139,7 +138,7 @@
               alt="Bronze equestrian statue of a warrior holding a spear, standing on the square outside the museum"
               width="600"
               height="337"
-            />
+            >
             <figcaption>
               The warrior statue on the square is a popular meeting point for
               groups before entry.
@@ -148,7 +147,7 @@
         </article>
       </section>
 
-      <hr />
+      <hr>
 
       <section id="how-to-book">
         <h2>How to Buy a Ticket Online</h2>
@@ -160,7 +159,6 @@
           >, to avoid queues on busy weekends.
         </p>
 
-        <!-- Nested list: outer ordered list shows the booking sequence, inner list breaks down the payment step -->
         <ol start="1">
           <li>
             Open the ticketing partner website and select &laquo;National
@@ -188,7 +186,7 @@
         </p>
       </section>
 
-      <hr />
+      <hr>
 
       <section id="ticket-types">
         <h2>Ticket Types Explained</h2>
@@ -219,7 +217,7 @@
             alt="Visitors queuing at the ticket turnstiles of the National Museum entrance"
             width="600"
             height="400"
-          />
+          >
           <figcaption>
             The entrance turnstiles where tickets and confirmation codes are
             checked.
@@ -232,7 +230,7 @@
             alt="Ceremonial gold-coloured warrior armour with a pointed helmet on display in a glass case"
             width="400"
             height="500"
-          />
+          >
           <figcaption>
             A full suit of Saka warrior armour, one of the exhibits waiting for
             you once you're through the turnstiles.
@@ -258,7 +256,7 @@
         </blockquote>
       </section>
 
-      <hr />
+      <hr>
 
       <section id="booking-form">
         <h2>Reserve Tickets in Advance</h2>
@@ -273,33 +271,33 @@
           <fieldset>
             <legend>Visitor Details</legend>
 
-            <label for="ticket-name">Full name:</label><br />
+            <label for="ticket-name">Full name:</label><br>
             <input
               type="text"
               id="ticket-name"
               name="ticket-name"
               placeholder="Assan Dairabayev"
               required
-            /><br /><br />
+            ><br><br>
 
-            <label for="ticket-email">Email:</label><br />
+            <label for="ticket-email">Email:</label><br>
             <input
               type="email"
               id="ticket-email"
               name="ticket-email"
               placeholder="you@example.com"
               required
-            /><br /><br />
+            ><br><br>
 
-            <label for="ticket-phone">Phone:</label><br />
+            <label for="ticket-phone">Phone:</label><br>
             <input
               type="tel"
               id="ticket-phone"
               name="ticket-phone"
               placeholder="+7 700 000 00 00"
-            /><br /><br />
+            ><br><br>
 
-            <label for="ticket-count">Number of tickets:</label><br />
+            <label for="ticket-count">Number of tickets:</label><br>
             <input
               type="number"
               id="ticket-count"
@@ -308,15 +306,15 @@
               max="30"
               placeholder="2"
               required
-            /><br /><br />
+            ><br><br>
 
-            <label for="ticket-date">Visit date:</label><br />
+            <label for="ticket-date">Visit date:</label><br>
             <input
               type="date"
               id="ticket-date"
               name="ticket-date"
               required
-            /><br /><br />
+            ><br><br>
           </fieldset>
 
           <fieldset>
@@ -328,41 +326,41 @@
               name="category"
               value="adult"
               required
-            />
-            <label for="cat-adult">Adult</label><br />
+            >
+            <label for="cat-adult">Adult</label><br>
 
             <input
               type="radio"
               id="cat-student"
               name="category"
               value="student"
-            />
-            <label for="cat-student">Student / Senior</label><br />
+            >
+            <label for="cat-student">Student / Senior</label><br>
 
             <input
               type="radio"
               id="cat-family"
               name="category"
               value="family"
-            />
-            <label for="cat-family">Family package</label><br /><br />
+            >
+            <label for="cat-family">Family package</label><br><br>
 
             <input type="checkbox" id="add-guide" name="extras" value="guide" />
-            <label for="add-guide">Add a guided tour</label><br />
+            <label for="add-guide">Add a guided tour</label><br>
 
             <input type="checkbox" id="add-audio" name="extras" value="audio" />
-            <label for="add-audio">Add an audio guide</label><br /><br />
+            <label for="add-audio">Add an audio guide</label><br><br>
 
-            <label for="entry-time">Preferred entry time:</label><br />
+            <label for="entry-time">Preferred entry time:</label><br>
             <select id="entry-time" name="entry-time" required>
               <option value="" disabled selected>&mdash; Select &mdash;</option>
               <option value="10-12">10:00 &ndash; 12:00</option>
               <option value="12-14">12:00 &ndash; 14:00</option>
               <option value="14-16">14:00 &ndash; 16:00</option>
               <option value="16-18">16:00 &ndash; 18:00</option></select
-            ><br /><br />
+            ><br><br>
 
-            <label for="ticket-notes">Additional notes:</label><br />
+            <label for="ticket-notes">Additional notes:</label><br>
             <textarea
               id="ticket-notes"
               name="ticket-notes"
@@ -370,7 +368,7 @@
               cols="40"
               placeholder="Wheelchair access, group size, etc."
             ></textarea
-            ><br /><br />
+            ><br><br>
 
             <button type="submit">Reserve</button>
             <button type="reset">Clear form</button>
