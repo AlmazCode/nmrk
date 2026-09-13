@@ -56,6 +56,18 @@ class TagExtractor(HTMLParser):
         self.tags.append(("charref", line, {"name": name}))
 
 
+def extract_author(filepath):
+    """Extract author name from meta tag."""
+    text = filepath.read_text(encoding="utf-8")
+    m = re.search(r'<meta\s+name=["\']author["\']\s+content=["\']([^"\']+)["\']', text, re.IGNORECASE)
+    if m:
+        return m.group(1)
+    m = re.search(r'<meta\s+content=["\']([^"\']+)["\']\s+name=["\']author["\']', text, re.IGNORECASE)
+    if m:
+        return m.group(1)
+    return None
+
+
 def extract_all(filepath):
     """Extract all tags, comments, entities from an HTML file."""
     text = filepath.read_text(encoding="utf-8")
@@ -200,8 +212,26 @@ def generate_checklist(all_data):
     lines.append("Generated automatically by `generate_checklist.py`")
     lines.append("")
 
-    for filename, data in all_data.items():
-        lines.append(f"## {filename}")
+    # Authors summary
+    authors_map = {}
+    for filename, (author, _) in all_data.items():
+        if author:
+            authors_map.setdefault(author, []).append(filename)
+    if authors_map:
+        lines.append("## Authors")
+        lines.append("| Author | Files |")
+        lines.append("|---|---|")
+        for author, files in sorted(authors_map.items()):
+            lines.append(f"| **{author}** | {', '.join(files)} |")
+        lines.append("")
+        lines.append("---")
+        lines.append("")
+
+    for filename, (author, data) in all_data.items():
+        if author:
+            lines.append(f"## {filename} `@{author}`")
+        else:
+            lines.append(f"## {filename}")
         lines.append("")
 
         # Structural
@@ -399,6 +429,7 @@ def main():
     all_data = {}
     for filepath in HTML_FILES:
         filename = filepath.name
+        author = extract_author(filepath)
         tags = extract_all(filepath)
         entities = find_entities(filepath)
         comments = find_comments(filepath)
@@ -407,7 +438,7 @@ def main():
         tags_clean = [t for t in tags if t[0] not in ("comment", "entity", "charref")]
         combined = tags_clean + entities + comments
         classified = classify_tags(combined)
-        all_data[filename] = classified
+        all_data[filename] = (author, classified)
 
     checklist = generate_checklist(all_data)
     OUTPUT.write_text(checklist, encoding="utf-8")
