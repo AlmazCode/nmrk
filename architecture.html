@@ -37,8 +37,8 @@
         <p>
           The building of the National Museum of the Republic of Kazakhstan is a
           masterpiece of contemporary architecture. Designed by international
-          and local architects, the structure harmoniously blends traditional
-          nomadic motifs with futuristic high-tech engineering. Spanning over
+          and local architects, the structure <em>harmoniously</em> blends
+          traditional nomadic motifs with futuristic high-tech engineering. Spanning over
           <mark>74,000 square meters</mark>, it forms a key architectural anchor
           on Independence Square.
         </p>
@@ -48,12 +48,18 @@
           a bridge between the ancient past and the digital future.
         </p>
 
+        <blockquote cite="https://e-history.kz">
+          <p>One of the project's lead architects called the design <q>a dialogue between the nomadic past and a digital future</q>.</p>
+        </blockquote>
+        <p>&mdash; <cite>E-History Kazakhstan Archive</cite></p>
+
         <!-- Used article because this block focuses specifically on structural engineering details -->
         <article>
           <h3>Engineering and Structural Features</h3>
           <p>
             The complex consists of several interconnected blocks shaped like a
-            stepped pyramid and flowing organic curves. Special climate-control
+            stepped pyramid and flowing organic curves, with concrete elements
+            poured <i>in situ</i>. Special climate-control
             systems operate continuously to protect sensitive organic artifacts.
             <small
               >Engineering specifications are updated annually according to
@@ -62,19 +68,86 @@
           </p>
           <p>
             Building height reaches up to <b>51 meters</b> across its central
-            block, requiring advanced seismic resistance frameworks designed for
+            block, requiring <strong>advanced seismic resistance frameworks</strong> designed for
             Astana&rsquo;s continental climate.
           </p>
+
+          <p>Climate and structural systems include:</p>
+          <ul>
+            <li>Climate control
+              <ul>
+                <li>Humidity regulation</li>
+                <li>UV filtration</li>
+              </ul>
+            </li>
+            <li>Seismic dampers</li>
+            <li>Double-glazed facade</li>
+          </ul>
+
+          <p>Construction proceeded in the following phases:</p>
+          <ol type="I">
+            <li>Site preparation and foundation</li>
+            <li>Steel frame erection</li>
+            <li>Facade installation</li>
+            <li>Interior climate systems</li>
+          </ol>
         </article>
 
         <aside>
           <h3>Fast Fact</h3>
           <p>
             The building uses a specialized double-glazed facade system to
-            minimize thermal loss during winter temperatures dropping below
-            -30&#84c; (Celsius).
+            minimize thermal loss during winter temperatures<br>
+            dropping below -30&#8451; (Celsius).
           </p>
         </aside>
+      </section>
+
+      <hr>
+
+      <section id="terms">
+        <h2>Key Terms</h2>
+        <dl>
+          <dt>Composite panels</dt>
+          <dd>Lightweight prefabricated exterior cladding combining metal and insulating layers.</dd>
+
+          <dt>Structural glass</dt>
+          <dd>Load-bearing glazing that also serves as the building&rsquo;s primary facade material.</dd>
+
+          <dt>Seismic resistance framework</dt>
+          <dd>An engineering system designed to absorb and dissipate ground motion energy during earthquakes.</dd>
+        </dl>
+      </section>
+
+      <section id="specs-table">
+        <h2>Technical Specifications</h2>
+        <table>
+          <caption>Key structural and environmental specifications of the museum building.</caption>
+          <thead>
+            <tr>
+              <th scope="col">Specification</th>
+              <th scope="col">Value</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Total area</th>
+              <td>74,000 m<sup>2</sup></td>
+            </tr>
+            <tr>
+              <th scope="row">Central block height</th>
+              <td>51 m</td>
+            </tr>
+            <tr>
+              <th scope="row">Minimum winter temperature tolerance</th>
+              <td>-30&#8451;</td>
+            </tr>
+            <tr>
+              <th scope="row">Zone ID</th>
+              <td>BLDG-AST-2026-V2</td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <section id="structural-breakdown">
@@ -86,14 +159,53 @@
           identifier below.
         </p>
 
-        <!-- div used because no semantic container fits a raw inline technical identifier string here -->
+        <!-- div used because no semantic container fits here -->
         <div>
-          <!-- Reason: div is used here purely as a generic wrapper because no other semantic block element matches an isolated technical metadata string snippet -->
+          <!-- div is used here purely as a generic wrapper -->
           <p>
             Zone ID: <code>BLDG-AST-2026-V2</code> &ndash; Status:
             <span lang="ru">Активно</span>
           </p>
         </div>
+      </section>
+
+      <hr>
+
+      <section id="tour-request">
+        <h2>Request a Guided Architecture Tour</h2>
+        <p>Fill out the form below to arrange a docent-led tour focused on the building's engineering and design.</p>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Visitor Details</legend>
+            <p>
+              <label for="visitor-name">Full name</label><br>
+              <input type="text" id="visitor-name" name="visitor-name" required>
+            </p>
+            <p>
+              <label for="visitor-email">Email</label><br>
+              <input type="email" id="visitor-email" name="visitor-email" required>
+            </p>
+            <p>
+              <label for="visit-date">Preferred date</label><br>
+              <input type="date" id="visit-date" name="visit-date">
+            </p>
+            <p>
+              <label for="group-size">Group size</label><br>
+              <select id="group-size" name="group-size">
+                <option value="1-5">1&ndash;5</option>
+                <option value="6-15">6&ndash;15</option>
+                <option value="16+">16+</option>
+              </select>
+            </p>
+            <p>
+              <label for="message">Additional notes</label><br>
+              <textarea id="message" name="message" rows="4"></textarea>
+            </p>
+            <p>
+              <button type="submit">Submit Request</button>
+            </p>
+          </fieldset>
+        </form>
       </section>
     </main>
 
