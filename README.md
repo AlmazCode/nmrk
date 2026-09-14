@@ -20,6 +20,7 @@ A static HTML website for the National Museum of the Republic of Kazakhstan, bui
 | `museum_rules.html` | Visitor rules, prohibited items, and feedback form |
 | `visiting_tickets.html` | Ticket prices, discounts, and online booking form |
 | `events_programs.html` | Upcoming exhibitions, workshops, lectures, and family programs |
+| `architecture.html` | Architectural design, engineering features, and guided tour form |
 | `colophon.html` | Technical details about how this site was built |
 
 ## Project Structure
@@ -32,8 +33,12 @@ nmrk/
 ├── museum_rules.html
 ├── visiting_tickets.html
 ├── events_programs.html
+├── architecture.html
 ├── colophon.html
 ├── tag-checklist.md
+├── generate_checklist.py
+├── Requirements.txt
+├── rules.md
 ├── README.md
 ├── .gitignore
 └── src/
@@ -44,9 +49,15 @@ nmrk/
     ├── saukele.jpg
     ├── balbals.jpg
     ├── cauldron.jpg
-    ├── otroar_pottery.jpg
+    ├── otrar_pottery.jpg
     ├── enter-to-museum.jpg
-    └── enter-to-museum-2.jpg
+    ├── enter-to-museum-2.jpg
+    ├── traditional-costumes.jpg
+    ├── golden-warrior-armor.jpg
+    ├── battle-painting.jpg
+    ├── warrior-statue-square.jpg
+    ├── dinosaur-skeleton.jpg
+    └── stone-stele-balbal.jpg
 ```
 
 ## Team
